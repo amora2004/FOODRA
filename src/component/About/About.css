@@ -1,0 +1,17 @@
+.about .text {
+    background-color: #fff;
+    padding: 50px;
+    background-color: var(--secondry-color);
+}
+
+.about .text h3 {
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.about .text p {
+    color: var(--grey-color) !important;
+    margin: 15px;
+    font-family: 18px;
+    letter-spacing: 1px;
+}

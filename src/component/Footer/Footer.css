@@ -1,0 +1,33 @@
+.footer {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.footer .text li a {
+    color: var(--secondry-color) !important;
+
+    text-decoration: none;
+}
+
+.footer p {
+    color: #fff;
+    margin: auto;
+}
+
+.footer span {
+    color: var(--secondry-color);
+    font-size: 20px;
+}
+
+.footer .social {
+    color: var(--secondry-color) !important;
+}

@@ -1,0 +1,15 @@
+.number {
+    background-color: var(--secondry-color);
+    color: var(--main-color);
+    padding-bottom: 30px;
+    
+}
+
+.number span {
+    font-size: 13px;
+
+}
+
+.number h4 {
+    margin-top: 30px;
+}

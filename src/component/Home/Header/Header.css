@@ -1,0 +1,75 @@
+header {
+    min-height: 500px;
+    overflow: hidden;
+    background-color: var(--secondry-color);
+
+}
+
+.Container {
+    margin: 30px;
+    border-radius: 30px;
+    box-shadow: 2px 4px 10px #ddd;
+    background-color: #fff;
+    overflow: hidden;
+    flex: 1;
+
+}
+
+header .right {
+    background: url(../../../assets/background.jpg) 100% no-repeat;
+    height: 500px;
+}
+
+header .left {
+    background-size: cover;
+    width: 100%;
+    align-items: 70%;
+    background-color: var(--secondry-color) !important;
+}
+
+header h2 {
+    padding-top: 30px;
+    color: var(--main-color) !important;
+    font-size: 40px;
+    width: 75%;
+    line-height: 50px;
+    margin: auto;
+    font-weight: 500;
+}
+
+header p {
+    color: var(--grey-color) !important;
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-top: 3px solid var(--secondry-color);
+    border-bottom: 3px solid var(--secondry-color);
+    border-radius: 10%;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+header button {
+    background-color: var(--main-color) !important;
+    color: var(--secondry-color) !important;
+    transition: .3s;
+    margin-bottom: 30px;
+}
+
+header button:last-of-type {
+    background-color: var(--secondry-color) !important;
+    color: var(--main-color) !important;
+    border: 1px solid var(--main-color);
+
+}
+
+@media (max-width:767px) {
+
+    header .right {
+        height: 0;
+    }
+
+
+}

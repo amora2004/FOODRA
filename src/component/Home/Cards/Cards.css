@@ -1,0 +1,18 @@
+.blogs {
+    padding-top: 50px;
+
+
+}
+
+.blogs .row:first-child {
+    align-items: center;
+}
+
+.blogs h2 {
+    color: var(--main-color) !important;
+    margin: 20px;
+}
+
+.blogs p {
+    color: var(--grey-color) !important;
+}

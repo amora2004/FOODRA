@@ -1,0 +1,97 @@
+.side {
+    background-color: var(--secondry-color);
+    padding: 5px;
+    min-height: 500px;
+}
+
+
+
+.side h2 {
+    color: var(--main-color) !important;
+    margin: 20px 20%;
+}
+
+.side ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.side li {
+    padding: 5px;
+    position: relative;
+}
+
+.side li:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    border: 17px solid;
+    border-color: transparent var(--main-color) transparent transparent;
+}
+
+.side li a {
+    color: var(--grey-color);
+    text-decoration: none;
+    width: fit-content;
+}
+
+.side li:hover {
+    background-color: var(--main-color);
+}
+
+.side li:hover a {
+    color: #fff;
+}
+
+.info h1 {
+    color: var(--main-color) !important;
+    margin: 30px auto;
+}
+
+@media (max-width : 767px) {
+    .side {
+        width: 30% !important;
+    }
+
+    .info {
+        width: 70% !important;
+    }
+}
+
+
+.accordion {
+    --bs-accordion-active-bg: var(--secondry-color) !important;
+    --bs-accordion-active-color: var(--grey-color) !important;
+    --bs-accordion-btn-focus-border-color: var(--secondry-color) !important;
+}
+
+.accordion-item {
+    border: 2px solid var(--secondry-color) !important;
+}
+
+.accordion-button:focus,
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgb(252, 239, 239) !important;
+}
+
+.info h3 {
+    color: var(--main-color);
+    margin-bottom: 20px;
+
+}
+
+.info .part2 {
+    background-color: var(--secondry-color);
+    padding: 50px;
+    height: 100%;
+}
+
+textarea.form-control {
+    min-height: 160px !important;
+}
+
+.form-control {
+    border: var(--bs-border-width) solid var(--secondry-color) !important;
+}

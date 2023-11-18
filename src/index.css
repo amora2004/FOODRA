@@ -1,0 +1,44 @@
+:root {
+  --secondry-color: rgba(253, 246, 246, 0.986);
+  --main-color: #c1272c;
+  --grey-color: #777;
+  --bs-primary-bg-subtle: rgba(253, 246, 246, 0.986) !important;
+
+  --bs-secondary-bg-subtle: rgba(253, 246, 246, 0.986) !important;
+
+  --bs-success-bg-subtle: rgba(253, 246, 246, 0.986) !important;
+
+}
+
+body {
+  margin: 0;
+  font-family: 'Tajawal', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Tajawal', sans-serif;
+}
+
+.btn {
+  background-color: var(--main-color) !important;
+  color: var(--secondry-color) !important;
+  font: 17px !important;
+  margin: 15px auto !important;
+  border: 1px solid var(--main-color) !important;
+}
+
+.btn:hover {
+  background-color: var(--secondry-color) !important;
+  color: var(--main-color) !important;
+}
+
+.btn a {
+  color: var(--secondry-color) !important;
+  text-decoration: none;
+}
+
+.btn:hover a {
+  color: var(--main-color) !important;
+}

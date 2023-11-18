@@ -1,0 +1,29 @@
+.pride {
+    background-color: var(--main-color);
+}
+
+.pride img {
+    border-radius: 20px;
+    margin: auto;
+    max-width: 100%;
+
+}
+
+.pride .text {
+    margin: 50px auto;
+    align-items: center;
+    width: 80%;
+}
+
+h2 {
+    color: var(--secondry-color) !important;
+}
+
+p {
+    color: #fff !important;
+}
+
+.pride button {
+    background-color: var(--secondry-color) !important;
+    color: var(--main-color) !important;
+}
