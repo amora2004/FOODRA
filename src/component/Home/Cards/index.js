@@ -7,7 +7,7 @@ const Cards = () => {
     const blogitem = Data.map((item) => {
 
         return (
-            <div className="col-lg-4">
+            <div className="col-lg-4 item">
                 <Card image={item.img} title={item.title} time={item.time} price={item.price} />
             </div>
         )

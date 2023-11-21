@@ -13,14 +13,14 @@ nav {
     height: 40px;
 }
 
-.toggle {
+.nv .toggle {
     position: absolute;
     right: 50px;
     top: -10px;
 }
 
-.toggle::after,
-.toggle::before {
+.nv .toggle::after,
+.nv .toggle::before {
     content: '';
     height: 1.3px;
     background-color: var(--secondry-color);
@@ -29,16 +29,16 @@ nav {
     transform: translateX(-50%);
 }
 
-.toggle::after {
+.nv .toggle::after {
     width: 15px;
     top: 35%;
 }
 
-.toggle:hover:after {
+.nv .toggle:hover:after {
     width: 30px;
 }
 
-.toggle::before {
+.nv .toggle::before {
     width: 30px;
     bottom: 35%;
 }
@@ -65,20 +65,50 @@ nav .last-nav {
     border: 2px solid var(--main-color);
     background-color: var(--main-color);
     color: #fff !important;
-    margin-left: 20px;
+    margin: 10px 0px 10px 20px ;
     border-radius: 10px;
     width: fit-content;
     flex: -1;
 }
 
-@media (max-width : 991px) {
-    nav .last-nav {
-        margin: auto;
-    }
-}
+
 
 nav .last-nav:hover {
     background-color: transparent;
     color: var(--main-color) !important;
     transition: .3s;
+}
+
+nav .a {
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+li {
+    list-style: none;
+}
+
+nav .notactive :hover {
+    background-color: var(--secondry-color) !important;
+    border-radius: 5px;
+}
+
+nav .active {
+    border-radius: 5px;
+}
+
+nav .active {
+    border-bottom: 2px solid var(--main-color);
+    animation: acrod 5s linear alternate infinite;
+}
+
+@keyframes acrod {
+    from {
+        background-color: #fff;
+    }
+
+    to {
+        background-color: var(--secondry-color);
+    }
 }

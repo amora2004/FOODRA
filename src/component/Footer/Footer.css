@@ -31,3 +31,7 @@
 .footer .social {
     color: var(--secondry-color) !important;
 }
+.footer .social li {
+    width: 30px;
+    background-color: var(--main-color);
+}

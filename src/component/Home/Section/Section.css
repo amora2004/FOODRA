@@ -22,8 +22,3 @@ h2 {
 p {
     color: #fff !important;
 }
-
-.pride button {
-    background-color: var(--secondry-color) !important;
-    color: var(--main-color) !important;
-}

@@ -14,7 +14,6 @@ const Section = () => {
                             <div className='text'>
                                 <h2>We pride our selves on making reel food from the best ingredients</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi cum beatae vel laudantium enim nulla velit eligendi non culpa.</p>
-                                <button className='btn' >Learn More</button>
                             </div>
                         </div>
                     </div>

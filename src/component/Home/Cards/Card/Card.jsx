@@ -1,12 +1,12 @@
 import { useDispatch } from "react-redux"
 import "./Card.css"
-import React, { useEffect } from 'react'
+import React from 'react'
 import { addToCart } from "../../../../Redux/cartReducer"
 
 const Card = (props) => {
     const dispatch = useDispatch()
     return (
-        <div>
+        <div className="fa">
             <div className='box'>                <img src={props.image} />
                 <h4> {props.title}</h4>
                 <span> {props.time} </span>
@@ -17,6 +17,7 @@ const Card = (props) => {
                         title: props.title,
                         image: props.image,
                         price: props.price,
+                        count: props.count,
                     }
                 ))} >Order Now</button>
             </div>

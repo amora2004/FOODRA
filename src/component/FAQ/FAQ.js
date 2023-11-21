@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './FAQ.css'
 import Accordion from 'react-bootstrap/Accordion';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 const FAQ = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
+    const mail = useRef("")
+    const qu = useRef("")
+    function handleEmail() {
+        localStorage.setItem('email', mail.current.value)
+    }
+    function handleQoustion() {
+        localStorage.setItem('qoustion', qu.current.value)
+        qu.current.value = '';
+    }
+
+
     return (
         <div className='row'>
             <div className=' col-md-2 side'>
@@ -70,19 +84,23 @@ const FAQ = () => {
                     </div>
                     <div className='part2 col-md-6'>
                         <h3>Ask Us Anything</h3>
-                        <Form>
+                        <Form onSubmit={handleSubmit}>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>Email address</Form.Label>
-                                <Form.Control type="email" placeholder="Enter email" />
+                                <Form.Label> Email address </Form.Label>
+                                <Form.Control type="email" name='email' placeholder="Enter email"
+                                    defaultValue={localStorage.getItem('email')}
+                                    ref={mail}
+                                    onChange={() => handleEmail()}
+                                />
                                 <Form.Text className="text-muted">
                                     We'll never share your email with anyone else.
                                 </Form.Text>
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Example textarea</Form.Label>
-                                <Form.Control as="textarea" rows={3} />
+                                <Form.Control as="textarea" rows={3} ref={qu} />
                             </Form.Group>
-                            <Button className='btn' type="submit">
+                            <Button className='btn' type="submit" onClick={handleQoustion} >
                                 Send
                             </Button>
                         </Form>

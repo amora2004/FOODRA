@@ -39,9 +39,20 @@
     border-radius: 50%;
     border: 2px solid var(--main-color);
     position: absolute;
-    left: 50%;
     transform: translate(-50%, 40%);
     bottom: -10px;
     background-color: var(--secondry-color);
+    animation: run 3s linear infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-direction: alternate;
+}
 
+@keyframes run {
+    from {
+        left: 10%;
+    }
+
+    to {
+        left: 90%;
+    }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import { IconName } from "react-icons/fa6";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaSquareFacebook, FaSquareInstagram, FaSquarePhone, FaSquareTwitter, FaSquareWhatsapp } from "react-icons/fa6";
 const Footer = () => {
     return (
         <div className='footer'>
@@ -15,9 +15,13 @@ const Footer = () => {
                 </ul>
             </div>
             <ul className='social'>
-                <li></li>
+                <li><FaSquareFacebook /></li>
+                <li><FaSquareInstagram /></li>
+                <li><FaSquarePhone /></li>
+                <li><FaSquareTwitter /></li>
+                <li><FaSquareWhatsapp /></li>
             </ul>
-            <p> &copy 2021.<span>Foodra</span> .All rights reserved  </p>
+            <p> &copy 2023.<span>Foodra</span> .All rights reserved  </p>
         </div>
 
     )

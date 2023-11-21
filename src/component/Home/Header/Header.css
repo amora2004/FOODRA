@@ -16,7 +16,7 @@ header {
 }
 
 header .right {
-    background: url(../../../assets/background.jpg) 100% no-repeat;
+    animation: change-background 10s linear infinite;
     height: 500px;
 }
 
@@ -51,19 +51,8 @@ header p {
     line-height: 30px;
 }
 
-header button {
-    background-color: var(--main-color) !important;
-    color: var(--secondry-color) !important;
-    transition: .3s;
-    margin-bottom: 30px;
-}
 
-header button:last-of-type {
-    background-color: var(--secondry-color) !important;
-    color: var(--main-color) !important;
-    border: 1px solid var(--main-color);
 
-}
 
 @media (max-width:767px) {
 
@@ -72,4 +61,20 @@ header button:last-of-type {
     }
 
 
+}
+
+
+
+
+
+@keyframes change-background {
+
+    0%,
+    100% {
+        background-image: url(../../../assets/٢٠٢٣١١١٩_٢٢٥٦٠١.jpg);
+    }
+
+    50% {
+        background-image: url(../../../assets/٢٠٢٣١١١٩_٢٢٥٣٥٠.jpg);
+    }
 }

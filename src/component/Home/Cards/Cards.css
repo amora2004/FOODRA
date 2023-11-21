@@ -16,3 +16,30 @@
 .blogs p {
     color: var(--grey-color) !important;
 }
+
+.item .btn {
+    display: none !important;
+}
+
+.item .box h5 {
+    padding-bottom: 30px;
+
+}
+
+.item {
+    animation: trans 10s linear infinite;
+}
+
+@keyframes trans {
+
+    0,
+    100% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.05;
+        transform: skew(-1deg);
+    }
+
+}

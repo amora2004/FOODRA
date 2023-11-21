@@ -1,5 +1,6 @@
 import React from 'react'
 import './Section2.css'
+import { Link } from 'react-router-dom'
 
 const Section2 = () => {
     return (
@@ -12,7 +13,7 @@ const Section2 = () => {
                     <li> Erat volutpat aliquet imperdiet</li>
                     <li> Purus a odio finibus bibnedom</li>
                 </ul>
-                <button className='btn' >Learn More</button>
+                <button className='btn bm' ><Link to='/review'> Learn More </Link></button>
             </div>
         </section >
     )
